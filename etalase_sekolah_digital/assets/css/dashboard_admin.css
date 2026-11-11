@@ -1,0 +1,368 @@
+/* ==========================================================
+   DASHBOARD ADMIN CSS (Struktur Plek Super Admin, Tema Aksen Biru)
+   ========================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.sa-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* Hero Banner Admin */
+.sa-hero-banner {
+    background: #1e3a8a; /* Warna khusus Admin (Biru) */
+    color: #ffffff;
+    padding: 2.2rem 2.5rem;
+    border-radius: 16px;
+    margin: 1.5rem auto 1rem auto;
+    box-shadow: 0 4px 20px rgba(30, 58, 138, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+.sa-hero-banner h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.sa-hero-banner p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.sa-banner-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.sa-total-badge {
+    background: #ffffff;
+    color: #1e3a8a;
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* KONTEN UTAMA KARYA */
+.sa-content-wrapper {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 1.5rem 2.5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+/* Judul Section */
+.sa-section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1e3a8a;
+    border-left: 4px solid #1e3a8a;
+    padding-left: 0.75rem;
+    margin-left: 0;
+}
+
+/* GRID KARYA 5 SEBARIS (Persis Plek SA) */
+.sa-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* KOTAK KARYA (Ukuran & Lebar sama persis SA) */
+.sa-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    width: calc(20% - 0.65rem);
+    min-width: 250px;
+    max-width: 320px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(30, 58, 138, 0.12);
+}
+
+.sa-card-img {
+    width: 100%;
+    height: 160px;
+    background: #f3f4f6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sa-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.sa-card:hover .sa-card-img img {
+    transform: scale(1.03);
+}
+
+.sa-card-body {
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sa-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.sa-card-title:hover {
+    color: #1e3a8a;
+}
+
+.sa-card-desc {
+    font-size: 0.82rem;
+    color: #6b7280;
+    margin-bottom: 0.85rem;
+    line-height: 1.35;
+    flex-grow: 1;
+}
+
+.sa-btn-group {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.65rem;
+}
+
+.sa-btn-github {
+    flex: 1;
+    text-align: center;
+    background: #1f2937;
+    color: #ffffff;
+    padding: 0.38rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.sa-btn-github:hover {
+    background: #111827;
+}
+
+.sa-btn-demo {
+    flex: 1;
+    text-align: center;
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 0.38rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.sa-btn-demo:hover {
+    background: #1e40af;
+}
+
+.sa-card-footer {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 0.65rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.72rem;
+}
+
+.sa-author-info {
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.sa-author-info span {
+    font-weight: 700;
+    color: #374151;
+}
+
+.sa-action-buttons {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.sa-btn-edit {
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sa-btn-edit:hover {
+    background: #1e40af;
+}
+
+.sa-btn-hapus {
+    background: #dc2626;
+    color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sa-btn-hapus:hover {
+    background: #b91c1c;
+}
+
+.sa-empty-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 1.25rem 1.75rem;
+    border-radius: 10px;
+    color: #6b7280;
+    font-size: 0.9rem;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    margin-top: 0.2rem;
+}
+
+/* MODAL POP-UP */
+.sa-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.sa-modal-box {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    position: relative;
+    animation: saModalScale 0.25s ease;
+}
+
+@keyframes saModalScale {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.sa-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.sa-modal-close:hover {
+    color: #1f2937;
+}
+
+.sa-modal-img {
+    width: 100%;
+    height: 250px;
+    background: #f3f4f6;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sa-modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sa-modal-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.sa-modal-info {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sa-modal-desc {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.sa-modal-actions {
+    display: flex;
+    gap: 0.75rem;
+}
